@@ -82,7 +82,7 @@ class AppDelegate
 	end
 	
 	def sourceList source_list, itemHasIcon:item
-		!item.kind_of?(Hash)
+		not item.kind_of?(Hash)
 	end
 	
 	def sourceList source_list, iconForItem:item
@@ -152,6 +152,7 @@ class AppDelegate
       player.hidden = true unless @player.movie
       movie.autoplay
       player.hidden = false
+			@window.title = "You\'re watching to #{@last_item}"
 			@remove_progress[] if @remove_progress
       player.movie = movie
     end
