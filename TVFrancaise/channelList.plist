@@ -189,6 +189,10 @@
 		<key>child</key>
 		<array>
 			<dict>
+				<key>Euronews (PT)</key>
+				<string>http://akamedia2.lsops.net/live/smil:euronews_pt.smil/playlist.m3u8</string>
+			</dict>
+			<dict>
 				<key>RTP Internacional</key>
 				<string>http://h2a.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8</string>
 			</dict>

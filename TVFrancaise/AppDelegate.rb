@@ -11,7 +11,6 @@ class AppDelegate
   attr_accessor :outline
   attr_accessor :play_view
   attr_accessor :split_view
-
   LAST_CHANNEL_KEY = "org.mattetti.livetv-lastchannel"
   
   def applicationDidFinishLaunching(notification)
@@ -168,6 +167,12 @@ class AppDelegate
 	# NSSplitterView delegate method => size configuration
 	def splitView splitView, constrainMaxCoordinate:proposed_max, ofSubviewAt:divider_index
 		300.0
-	end	
+	end
+	
+	# AVLayerVideoGravityResize or AVLayerVideoGravityResizeAspectFill
+	#	AVLayerVideoGravityResizeAspect
+	def video_fillmode sender
+		@play_view.video_fillmode(sender.tag)
+	end
 end
 

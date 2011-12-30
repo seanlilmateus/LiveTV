@@ -6,7 +6,8 @@
 #  Copyright 2011 Sean Coorp. INC. All rights reserved.
 #
 class LTPlayerView < NSView	
-  
+	FILLMODES = [AVLayerVideoGravityResize, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResizeAspect]
+
 	def self.layerClass
       AVPlayerLayer.class
   end
@@ -57,14 +58,12 @@ class LTPlayerView < NSView
 		color = CGColorCreateGenericRGB(0.0, 0.0, 0.0, 1)
     av_player_layer.backgroundColor = color
     CGColorRelease(color)
-    av_player_layer.videoGravity = AVLayerVideoGravityResize
+    av_player_layer.videoGravity = AVLayerVideoGravityResizeAspect
     self.layer = av_player_layer
   end
 	
-	# AVLayerVideoGravityResize or AVLayerVideoGravityResizeAspectFill
-	#	AVLayerVideoGravityResizeAspect
 	def video_fillmode mode
-		self.layer.videoGravity = mode
+		self.layer.videoGravity = FILLMODES[mode]
 	end
 end
 
