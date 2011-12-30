@@ -16,12 +16,12 @@
 		2B381A3C1483048E00D1F886 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2B381A3B1483048E00D1F886 /* AppDelegate.rb */; };
 		2B381A5A14832C0700D1F886 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B381A5914832C0700D1F886 /* QTKit.framework */; };
 		2B381A5C1484555B00D1F886 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B381A5B1484555B00D1F886 /* icon.icns */; };
+		4F7E5B8914A8833D005A20D3 /* BackgroundView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E5B8814A8833D005A20D3 /* BackgroundView.rb */; };
 		4F9AF39E149AF32A0037C994 /* PXSourceList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9AF39D149AF32A0037C994 /* PXSourceList.framework */; };
 		4F9AF39F149AF35E0037C994 /* PXSourceList.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F9AF39D149AF32A0037C994 /* PXSourceList.framework */; };
 		4FB863EF148D5501006CED55 /* channelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FB863EE148D5501006CED55 /* channelList.plist */; };
-		4FB86405148D69E1006CED55 /* FullScreenOverlayWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FB86404148D69E1006CED55 /* FullScreenOverlayWindowController.rb */; };
-		4FB86408148D69ED006CED55 /* FullScreenWindow.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FB86407148D69ED006CED55 /* FullScreenWindow.rb */; };
-		4FB8640A148D6A9F006CED55 /* FullScreenOverlayWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB86409148D6A9F006CED55 /* FullScreenOverlayWindow.xib */; };
+		4FF66C4E14AD33AC00E0BD90 /* LTPlayerView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FF66C4D14AD33AC00E0BD90 /* LTPlayerView.rb */; };
+		4FF66C5114AD3A3000E0BD90 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF66C5014AD3A3000E0BD90 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +62,11 @@
 		2B381A5B1484555B00D1F886 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
 		2B381A611484572B00D1F886 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		2BB8391514872BEE00A668FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4F7E5B8814A8833D005A20D3 /* BackgroundView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = BackgroundView.rb; sourceTree = "<group>"; };
 		4F9AF39D149AF32A0037C994 /* PXSourceList.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PXSourceList.framework; path = Frameworks/PXSourceList.framework; sourceTree = "<group>"; };
 		4FB863EE148D5501006CED55 /* channelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = channelList.plist; sourceTree = "<group>"; };
-		4FB86404148D69E1006CED55 /* FullScreenOverlayWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FullScreenOverlayWindowController.rb; sourceTree = "<group>"; };
-		4FB86407148D69ED006CED55 /* FullScreenWindow.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FullScreenWindow.rb; sourceTree = "<group>"; };
-		4FB86409148D6A9F006CED55 /* FullScreenOverlayWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullScreenOverlayWindow.xib; sourceTree = "<group>"; };
+		4FF66C4D14AD33AC00E0BD90 /* LTPlayerView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = LTPlayerView.rb; sourceTree = "<group>"; };
+		4FF66C5014AD3A3000E0BD90 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF66C5114AD3A3000E0BD90 /* AVFoundation.framework in Frameworks */,
 				2B381A5A14832C0700D1F886 /* QTKit.framework in Frameworks */,
 				2B381A251483048E00D1F886 /* Cocoa.framework in Frameworks */,
 				2B381A271483048E00D1F886 /* MacRuby.framework in Frameworks */,
@@ -87,6 +88,7 @@
 		2B381A151483048D00D1F886 = {
 			isa = PBXGroup;
 			children = (
+				4FF66C5014AD3A3000E0BD90 /* AVFoundation.framework */,
 				2B381A2B1483048E00D1F886 /* LiveTV */,
 				2B381A231483048E00D1F886 /* Frameworks */,
 				2B381A211483048E00D1F886 /* Products */,
@@ -117,8 +119,8 @@
 		2B381A2B1483048E00D1F886 /* LiveTV */ = {
 			isa = PBXGroup;
 			children = (
-				4FB86407148D69ED006CED55 /* FullScreenWindow.rb */,
-				4FB86404148D69E1006CED55 /* FullScreenOverlayWindowController.rb */,
+				4F7E5B8814A8833D005A20D3 /* BackgroundView.rb */,
+				4FF66C4D14AD33AC00E0BD90 /* LTPlayerView.rb */,
 				2B381A3B1483048E00D1F886 /* AppDelegate.rb */,
 				2B381A341483048E00D1F886 /* Resources */,
 				2B381A381483048E00D1F886 /* Other Sources */,
@@ -143,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				4FB863EE148D5501006CED55 /* channelList.plist */,
-				4FB86409148D6A9F006CED55 /* FullScreenOverlayWindow.xib */,
 				2B381A351483048E00D1F886 /* MainMenu.xib */,
 				2B381A5B1484555B00D1F886 /* icon.icns */,
 			);
@@ -234,9 +235,8 @@
 				2B381A3C1483048E00D1F886 /* AppDelegate.rb in Resources */,
 				2B381A5C1484555B00D1F886 /* icon.icns in Resources */,
 				4FB863EF148D5501006CED55 /* channelList.plist in Resources */,
-				4FB86405148D69E1006CED55 /* FullScreenOverlayWindowController.rb in Resources */,
-				4FB86408148D69ED006CED55 /* FullScreenWindow.rb in Resources */,
-				4FB8640A148D6A9F006CED55 /* FullScreenOverlayWindow.xib in Resources */,
+				4F7E5B8914A8833D005A20D3 /* BackgroundView.rb in Resources */,
+				4FF66C4E14AD33AC00E0BD90 /* LTPlayerView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +341,7 @@
 				INFOPLIST_FILE = "TVFrancaise/LiveTV-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -361,7 +361,7 @@
 				INFOPLIST_FILE = "TVFrancaise/LiveTV-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

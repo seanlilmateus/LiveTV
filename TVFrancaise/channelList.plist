@@ -77,10 +77,6 @@
 		<key>child</key>
 		<array>
 			<dict>
-				<key>Trace Urban HD</key>
-				<string>http://iphone.envivio.com/iphone/downloads/ch2/index.m3u8</string>
-			</dict>
-			<dict>
 				<key>BBC News</key>
 				<string>http://akamedia2.lsops.net/live/smil:bbcnews_en.smil/playlist.m3u8</string>
 			</dict>
@@ -107,6 +103,14 @@
 			<dict>
 				<key>Fashion TV</key>
 				<string>http://217.146.95.164:8081/ch27yiphone.m3u8</string>
+			</dict>
+			<dict>
+				<key>Trace Urban HD</key>
+				<string>http://iphone.envivio.com/iphone/downloads/ch2/index.m3u8</string>
+			</dict>
+			<dict>
+				<key>CNN Internacional</key>
+				<string>http://akamedia2.lsops.net/live/smil:cnn_en.smil/playlist.m3u8</string>
 			</dict>
 			<dict>
 				<key>AlJazeera English</key>
@@ -162,12 +166,20 @@
 		<key>child</key>
 		<array>
 			<dict>
-				<key>Euronews</key>
+				<key>Euronews (DE)</key>
 				<string>http://akamedia2.lsops.net/live/smil:euronews_de.smil/playlist.m3u8</string>
 			</dict>
 			<dict>
 				<key>Arte HD</key>
 				<string>http://iphone.envivio.com/iphone/downloads/ch1/index.m3u8</string>
+			</dict>
+			<dict>
+				<key>NDR</key>
+				<string>http://iphone.sg.softspb.com/ip/137_350.m3u8</string>
+			</dict>
+			<dict>
+				<key>DW-TV</key>
+				<string>http://hls-v3-spbtv.msk.softspb.com/69.isml/69-548k.m3u8</string>
 			</dict>
 		</array>
 		<key>group</key>
@@ -184,5 +196,33 @@
 		<key>group</key>
 		<string>Canais Portugueses</string>
 	</dict>
+	<dict>
+		<key>child</key>
+		<array>
+			<dict>
+				<key>324 TV</key>
+				<string>http://324.iphone.directes.tv3.cat/324.m3u8</string>
+			</dict>
+			<dict>
+				<key>Euronews (ES)</key>
+				<string>http://akamedia2.lsops.net/live/smil:euronews_es.smil/playlist.m3u8</string>
+			</dict>
+			<dict>
+				<key>TV3CAT</key>
+				<string>http://tv3cat.iphone.directes.tv3.cat/tv3cat.m3u8</string>
+			</dict>
+			<dict>
+				<key>CCTV</key>
+				<string>http://t.live.cntv.cn/m3u8/cctvxiyu.m3u8</string>
+			</dict>
+			<dict>
+				<key>Antena Latina</key>
+				<string>http://mek2.mekstream.com:1935/antenalatina/smil:antenalatina.smil/playlist.m3u8</string>
+			</dict>
+		</array>
+		<key>group</key>
+		<string>Spainish Channels</string>
+	</dict>
+
 </array>
 </plist>
