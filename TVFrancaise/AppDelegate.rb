@@ -94,7 +94,7 @@ class AppDelegate
 			identifier = outline.itemAtRow(row)
 			view = selected_row_spinner(row)
 			outline.addSubview view
-			remove = MATimer.scheduledTimerWithTimeInterval 1.0, repeats:false, block: -> time {
+			remove = NSTimer.scheduledTimerWithTimeInterval 1.0, repeats:false, block: -> time {
 				view.stopAnimation nil; view.removeFromSuperview
 			}
 			NSRunLoop.currentRunLoop.addTimer(remove, forMode:NSDefaultRunLoopMode)  

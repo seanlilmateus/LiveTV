@@ -13,7 +13,7 @@ module Kernel # Localization Extensions
   end
 end
 
-class MATimer < NSTimer # Timer Extenstion
+class NSTimer # Timer Extenstion
 	def self.scheduledTimerWithTimeInterval interval, repeats: repeat_flag, block: block
 		self.scheduledTimerWithTimeInterval interval, 
 																target: self, 
