@@ -6,7 +6,8 @@
 #  Copyright 2011 Sean Coorp. INC. All rights reserved.
 #
 class LTPlayerView < NSView	
-  def self.layerClass
+  
+	def self.layerClass
       AVPlayerLayer.class
   end
 	
@@ -57,8 +58,13 @@ class LTPlayerView < NSView
     av_player_layer.backgroundColor = color
     CGColorRelease(color)
     av_player_layer.videoGravity = AVLayerVideoGravityResize
-		# AVLayerVideoGravityResize or AVLayerVideoGravityResizeAspectFill AVLayerVideoGravityResizeAspect
     self.layer = av_player_layer
   end
+	
+	# AVLayerVideoGravityResize or AVLayerVideoGravityResizeAspectFill
+	#	AVLayerVideoGravityResizeAspect
+	def video_fillmode mode
+		self.layer.videoGravity = mode
+	end
 end
 

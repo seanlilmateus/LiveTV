@@ -55,7 +55,7 @@ class AppDelegate
 	end
 	
 	def sourceList source_list, objectValueForItem:item
-		item.kind_of?(Hash) ? item[:group] : item
+		item.kind_of?(Hash) ? NSLocalizedString(item[:group], value:nil) : item
 	end
 	
 	def sourceList source_list, selectionIndexesForProposedSelection:selected_indexes
@@ -94,7 +94,7 @@ class AppDelegate
 			identifier = outline.itemAtRow(row)
 			view = selected_row_spinner(row)
 			outline.addSubview view
-			remove = NSTimer.scheduledTimerWithTimeInterval 1.0, repeats:false, block: -> time {
+			remove = MATimer.scheduledTimerWithTimeInterval 1.0, repeats:false, block: -> time {
 				view.stopAnimation nil; view.removeFromSuperview
 			}
 			NSRunLoop.currentRunLoop.addTimer(remove, forMode:NSDefaultRunLoopMode)  

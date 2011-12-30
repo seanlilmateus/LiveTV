@@ -16,10 +16,11 @@
 		2B381A3C1483048E00D1F886 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2B381A3B1483048E00D1F886 /* AppDelegate.rb */; };
 		2B381A5A14832C0700D1F886 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B381A5914832C0700D1F886 /* QTKit.framework */; };
 		2B381A5C1484555B00D1F886 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B381A5B1484555B00D1F886 /* icon.icns */; };
-		4F7E5B8914A8833D005A20D3 /* BackgroundView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E5B8814A8833D005A20D3 /* BackgroundView.rb */; };
+		4F7E5B8914A8833D005A20D3 /* Extensions.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E5B8814A8833D005A20D3 /* Extensions.rb */; };
 		4F9AF39E149AF32A0037C994 /* PXSourceList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9AF39D149AF32A0037C994 /* PXSourceList.framework */; };
 		4F9AF39F149AF35E0037C994 /* PXSourceList.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F9AF39D149AF32A0037C994 /* PXSourceList.framework */; };
 		4FB863EF148D5501006CED55 /* channelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FB863EE148D5501006CED55 /* channelList.plist */; };
+		4FD2AE7E14ADC70A00386F67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FD2AE8014ADC70A00386F67 /* Localizable.strings */; };
 		4FF66C4E14AD33AC00E0BD90 /* LTPlayerView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FF66C4D14AD33AC00E0BD90 /* LTPlayerView.rb */; };
 		4FF66C5114AD3A3000E0BD90 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF66C5014AD3A3000E0BD90 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -62,9 +63,12 @@
 		2B381A5B1484555B00D1F886 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
 		2B381A611484572B00D1F886 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		2BB8391514872BEE00A668FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		4F7E5B8814A8833D005A20D3 /* BackgroundView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = BackgroundView.rb; sourceTree = "<group>"; };
+		4F7E5B8814A8833D005A20D3 /* Extensions.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Extensions.rb; sourceTree = "<group>"; };
 		4F9AF39D149AF32A0037C994 /* PXSourceList.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PXSourceList.framework; path = Frameworks/PXSourceList.framework; sourceTree = "<group>"; };
 		4FB863EE148D5501006CED55 /* channelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = channelList.plist; sourceTree = "<group>"; };
+		4FD2AE7F14ADC70A00386F67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4FD2AE8114ADC71C00386F67 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4FD2AE8214ADC72200386F67 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4FF66C4D14AD33AC00E0BD90 /* LTPlayerView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = LTPlayerView.rb; sourceTree = "<group>"; };
 		4FF66C5014AD3A3000E0BD90 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -119,7 +123,7 @@
 		2B381A2B1483048E00D1F886 /* LiveTV */ = {
 			isa = PBXGroup;
 			children = (
-				4F7E5B8814A8833D005A20D3 /* BackgroundView.rb */,
+				4F7E5B8814A8833D005A20D3 /* Extensions.rb */,
 				4FF66C4D14AD33AC00E0BD90 /* LTPlayerView.rb */,
 				2B381A3B1483048E00D1F886 /* AppDelegate.rb */,
 				2B381A341483048E00D1F886 /* Resources */,
@@ -133,6 +137,7 @@
 		2B381A2C1483048E00D1F886 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FD2AE8014ADC70A00386F67 /* Localizable.strings */,
 				2B381A2D1483048E00D1F886 /* LiveTV-Info.plist */,
 				2B381A2E1483048E00D1F886 /* InfoPlist.strings */,
 				2B381A311483048E00D1F886 /* main.m */,
@@ -212,6 +217,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
+				pt,
 			);
 			mainGroup = 2B381A151483048D00D1F886;
 			productRefGroup = 2B381A211483048E00D1F886 /* Products */;
@@ -235,8 +242,9 @@
 				2B381A3C1483048E00D1F886 /* AppDelegate.rb in Resources */,
 				2B381A5C1484555B00D1F886 /* icon.icns in Resources */,
 				4FB863EF148D5501006CED55 /* channelList.plist in Resources */,
-				4F7E5B8914A8833D005A20D3 /* BackgroundView.rb in Resources */,
+				4F7E5B8914A8833D005A20D3 /* Extensions.rb in Resources */,
 				4FF66C4E14AD33AC00E0BD90 /* LTPlayerView.rb in Resources */,
+				4FD2AE7E14ADC70A00386F67 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +284,16 @@
 				2B381A361483048E00D1F886 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4FD2AE8014ADC70A00386F67 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FD2AE7F14ADC70A00386F67 /* en */,
+				4FD2AE8114ADC71C00386F67 /* de */,
+				4FD2AE8214ADC72200386F67 /* pt */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
