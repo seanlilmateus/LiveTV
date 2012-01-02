@@ -2,11 +2,11 @@
 #  LTPlayerView.rb
 #  LiveTV
 #
-#  Created by Mateus Armando on 30.12.11.
-#  Copyright 2011 Sean Coorp. INC. All rights reserved.
+#  Created by Sean Mateus on 30.12.11.
+#  Copyright 2011 Sean Mateus.All rights reserved.
 #
 class LTPlayerView < NSView	
-    FILLMODES = [AVLayerVideoGravityResize, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResizeAspect]
+  FILLMODES = [AVLayerVideoGravityResize, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResizeAspect]
 
   def self.layerClass
     AVPlayerLayer.class # doesn't work only on IOS
