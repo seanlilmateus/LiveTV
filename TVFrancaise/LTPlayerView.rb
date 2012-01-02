@@ -3,7 +3,7 @@
 #  LiveTV
 #
 #  Created by Sean Mateus on 30.12.11.
-#  Copyright 2011 Sean Mateus.All rights reserved.
+#  Copyright 2011 Sean Mateus. No rights reserved.
 #
 class LTPlayerView < NSView	
   FILLMODES = [AVLayerVideoGravityResize, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResizeAspect]
