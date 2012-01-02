@@ -2,8 +2,8 @@
 #  BackgroundView.rb
 #  LiveTV
 #
-#  Created by Mateus Armando on 26.12.11.
-#  Copyright 2011 Sean Coorp. INC. All rights reserved.
+#  Created by Sean Mateus Armando on 26.12.11.
+#  Copyright 2011 Sean Mateus. No rights reserved.
 #
 module Kernel # Localization Extensions
   private
